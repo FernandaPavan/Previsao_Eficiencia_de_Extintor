@@ -165,7 +165,7 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   <BR>
 
   Gráfico-1, **"Histograma de Desibel "** e **"Boxplot de Desibel"**
-  ![alt text]![Grafico-1_duo_desibel_4](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/d756f416-26ee-47a6-8b64-6e10f04f9bdb)
+  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/d756f416-26ee-47a6-8b64-6e10f04f9bdb)
 
   <BR>
   <br>
