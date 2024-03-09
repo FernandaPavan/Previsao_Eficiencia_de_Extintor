@@ -1,11 +1,4 @@
 
-# Diretório ---------------------------------------------------------------
-
-setwd("C:/FCD/ProjetosFer/2 - Prevendo Eficiência de Extintores de Incêndio")
-getwd()
-list.files()
-
-
 # Demanda -----------------------------------------------------------------
 
 
