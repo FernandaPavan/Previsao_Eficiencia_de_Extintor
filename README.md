@@ -193,9 +193,11 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   ![alt text](Grafico-3_duo_airflow.png)
   <BR>
   <BR>
+  
   No gráfico-3, o menor valor de fluxo de ar registrado ```(Min.)``` é **0.000**, o que pode sugerir momentos sem fluxo de ar ou medições em repouso. O Primeiro Quartil (1st Qu.) mostra que **25%** dos dados são **3.200** ou menos, indicando que a maioria dos valores de fluxo de ar é maior. A Mediana ```(Median)```, situada no ponto médio dos dados ordenados, é **5.800**, dividindo assim a amostra ao meio com valores tanto abaixo quanto acima desse ponto.
 
   A Média ```(Mean)``` do fluxo de ar é **6.976**, e é importante notar que ela pode ser influenciada por valores extremamente altos ou baixos. O Terceiro Quartil (3rd Qu.) indica que **75%** dos dados são **11.200** ou menos, o que sugere que a maior parte do fluxo de ar não é excessivamente alta. Por fim, o valor Máximo ```(Max.)``` observado é **17.000**, marcando o nível mais alto de fluxo de ar na amostra.
+  
   <br>
   <br>
   <br>
