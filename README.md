@@ -407,7 +407,7 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   Portanto, com base nos resultados do teste, podemos concluir que as amostras **não seguem uma distribuição normal.**
   <br>
   <br>
- As variáveis Fluxo_de_ar, Desibel, Frequencia e Distancia não seguem uma distribuição normal. Portanto, vamos aplicar a **transformação de raiz quadrada** nas variáveis numéricas para tornar os dados mais uniformes. Na variável Fluxo_de_ar, temos valores como zero, que indicam zeros nos dados originais. Utilizaremos gráficos Q-Q para avaliar a normalidade; se os pontos estiverem alinhados com a linha diagonal, os dados podem ser considerados normalmente distribuídos. Desvios significativos dessa linha sugerem persistência de não normalidade. Vamos prosseguir com a análise para verificar a adequação da distribuição dos dados.
+ As variáveis Fluxo_de_ar, Desibel, Frequencia e Distancia não seguem uma distribuição normal. Portanto, vamos aplicar a ***transformação de raiz quadrada*** nas variáveis numéricas para tornar os dados mais uniformes. Na variável Fluxo_de_ar, temos valores como zero, que indicam zeros nos dados originais. Utilizaremos gráficos Q-Q para avaliar a normalidade; se os pontos estiverem alinhados com a linha diagonal, os dados podem ser considerados normalmente distribuídos. Desvios significativos dessa linha sugerem persistência de não normalidade. Vamos prosseguir com a análise para verificar a adequação da distribuição dos dados.
 
   <BR>
 
