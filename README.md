@@ -180,7 +180,7 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   Gráfico-2, **"Densidade de Desibel"**
   ![alt text](Grafico-2_Densidade_desibel.png)
 
-  No Gráfico-2, assim como no histograma, observamos a presença de dois picos em uma distribuição bimodal. Isso indica que existem dois valores ou intervalos de valores que ocorrem com mais frequência na amostra de dados.  Essa configuração pode surgir em situações onde há duas tendências ou comportamentos diferentes influenciando os dados, resultando em duas modas predominantes. 
+  No gráfico-2, assim como no histograma, observamos a presença de dois picos em uma distribuição bimodal. Isso indica que existem dois valores ou intervalos de valores que ocorrem com mais frequência na amostra de dados.  Essa configuração pode surgir em situações onde há duas tendências ou comportamentos diferentes influenciando os dados, resultando em duas modas predominantes. 
   <br>
   <br>
   <br>
@@ -219,7 +219,7 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   <br>
   <br>
 
-  No Gráfico-5, a frequência mínima observada ```(Min.)``` é **1.00**, o que pode indicar períodos de inatividade ou registros pontuais. O Quartil Inferior (1st Qu.) revela que **25%** dos registros são **14.00** ou inferiores, sugerindo que os demais valores de frequência são superiores. A Mediana ```(Median)```, posicionada na metade dos dados classificados, é **27.50**, partindo a série de dados em dois grupos com valores abaixo e acima dessa marca.
+  No gráfico-5, a frequência mínima observada ```(Min.)``` é **1.00**, o que pode indicar períodos de inatividade ou registros pontuais. O Quartil Inferior (1st Qu.) revela que **25%** dos registros são **14.00** ou inferiores, sugerindo que os demais valores de frequência são superiores. A Mediana ```(Median)```, posicionada na metade dos dados classificados, é **27.50**, partindo a série de dados em dois grupos com valores abaixo e acima dessa marca.
 
   O Valor Médio ```(Mean)``` da frequência é **31.61**, e vale ressaltar que este pode ser afetado por registros muito altos ou muito baixos. O Quartil Superior (3rd Qu.) mostra que **75%** dos registros são **47.00** ou inferiores, indicando que a maior parte das frequências não é elevada. A frequência máxima registrada ```(Max.)``` é **75.00**, representando o pico de frequência nos dados.
   <br>
@@ -278,7 +278,7 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   Gráfico-9, **"Fluxo_de_ar_x_Status"**
   ![alt text](Grafico-9_Airflow_x_Status.png)
 
-  No Gráfico-9,  ao analisarmos, notamos que há valores extremos (zeros). Seguindo a análise, percebemos um aumento no fluxo de ar que está associado à extinção da chama. Contudo, é preciso ter cautela ao considerar essa associação como absoluta, uma vez que o mesmo pico na frequência ‘3 e 5’ é observado em ambas as modalidades, tanto na chama (não extinta = 0) quanto na chama (extinta = 1).
+  No gráfico-9,  ao analisarmos, notamos que há valores extremos (zeros). Seguindo a análise, percebemos um aumento no fluxo de ar que está associado à extinção da chama. Contudo, é preciso ter cautela ao considerar essa associação como absoluta, uma vez que o mesmo pico na frequência ‘3 e 5’ é observado em ambas as modalidades, tanto na chama (não extinta = 0) quanto na chama (extinta = 1).
   <BR>
   <BR>
   <BR>
@@ -348,7 +348,7 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   <br>
   <br>
 
-  No Gráfico-15, nota-se que a distribuição das variáveis encontra-se agora balanceada através da técnica de oversampling. O objetivo é melhorar o desempenho do modelo de machine learning.
+  No gráfico-15, nota-se que a distribuição das variáveis encontra-se agora balanceada através da técnica de oversampling. O objetivo é melhorar o desempenho do modelo de machine learning.
   <br>
   <br>
  
