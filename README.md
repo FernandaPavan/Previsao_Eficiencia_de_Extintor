@@ -460,18 +460,18 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   <br>
 
   * **MeanDecreaseAccuracy:** mede o impacto de cada variável na precisão geral do modelo. Quanto maior o valor mais importante a variável é para a precisão do modelo.<br>
-  20: Baixa importância para a precisão.<br>
-  40: Moderada importância para a precisão.<br>
-  60: Importância considerável para a precisão.<br>
-  80: Muito importante para a precisão.<br>
+  **20:** Baixa importância para a precisão.<br>
+  **40:** Moderada importância para a precisão.<br>
+  **60:** Importância considerável para a precisão.<br>
+  **80:** Muito importante para a precisão.<br>
   <br>
 
   * **MeanDecreaseGini:** avalia como cada variável contribui para a pureza das divisões feitas pela árvore. Quanto maior o valor  mais importante a variável é para a separação eficaz das classes alvo.<br>
-  0: Baixa importância para a pureza.<br>
-  1000: Moderada importância para a pureza.<br>
-  2000: Importância considerável para a pureza.<br>
-  3000: Muito importante para a pureza.<br>
-  4000: Extremamente importante para a pureza.<br>
+  **0:** Baixa importância para a pureza.<br>
+  **1000:** Moderada importância para a pureza.<br>
+  **2000:** Importância considerável para a pureza.<br>
+  **3000:** Muito importante para a pureza.<br>
+  **4000:** Extremamente importante para a pureza.<br>
   <br>
 
 Neste caso, o modelo sugeriu apenas uma variável relevante: **‘Tamanho’** para o primeiro grupo, com base no critério **MeanDecreaseAccuracy**. No entanto, quando analisamos os gráficos de correlação entre as variáveis, notamos que as variáveis isoladas não correspondiam diretamente à extinção da chama. Isso ocorre porque elas sofrem interferência de outras variáveis. Para chegarmos à extinção da chama, é necessário considerar essas interações. Essa relação é evidenciada no segundo grupo de pureza, onde o critério **MeanDecreaseGini** também demonstra sua importância.
