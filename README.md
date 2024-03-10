@@ -89,16 +89,16 @@ câmera é instalada para **detectar o tempo de extinção da chama.** <br>
 ### ```4.2 Dicionário de Dados ```
 
 
-|Variável | Descrição ||
-|:------- | :--------- | :------|
+|Variável | Descrição |
+|:------- | :--------- | 
 |**Size:**   | Representa o tamanho da chama  (Registrado como 7 cm = 1, 12 cm = 2, 14 cm = 3, 16 cm = 4, 20 cm = 5, meio acelerador = 6, acelerador máximo = 7).|
 |**Fuel:**   |    Indica o tipo de combustível usado (1 = Gasolina, 2 = Querosene, 3 = Solvente, 4 = GLP).|
-|**Distance:**  |    Distância entre o extintor e a chama.   |   |
-|**Decibel:**    |    Intensidade do som.    |  |
-|**Airflow:**    |   Medida do fluxo de ar resultante das ondas sonoras durante a fase de extinção da chama.  ||
-|**Frequency:**    |   Frequência das ondas sonoras aplicadas durante o teste.   |  |
+|**Distance:**  |    Distância entre o extintor e a chama.   |   
+|**Decibel:**    |    Intensidade do som.    |  
+|**Airflow:**    |   Medida do fluxo de ar resultante das ondas sonoras durante a fase de extinção da chama.  |
+|**Frequency:**    |   Frequência das ondas sonoras aplicadas durante o teste.   |  
 |**Status:**    | Indica se a chama foi extinta ou não (0 = indica o estado de não extinção, 1 = indica o estado de extinção).|
----
+
 <br>
 <br>
 
@@ -179,7 +179,8 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   <br>
 
   Gráfico-2, **"Densidade de Desibel"**
-  ![alt text](Grafico-2_Densidade_desibel.png)
+  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/858d3827-978a-4cf3-98fa-03f00871be98)
+
 
   No gráfico-2, assim como no histograma, observamos a presença de dois picos em uma distribuição bimodal. Isso indica que existem dois valores ou intervalos de valores que ocorrem com mais frequência na amostra de dados.  Essa configuração pode surgir em situações onde há duas tendências ou comportamentos diferentes influenciando os dados, resultando em duas modas predominantes. 
   <br>
@@ -191,7 +192,8 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   <br>
 
   Gráfico-3, **"Histograma de Fluxo_de_ar "** e  **"Boxplot de Fluxo_de_ar"**
-  ![alt text](Grafico-3_duo_airflow.png)
+  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/1a13d6ac-5ea9-4090-affd-7a1b3d1bf00f)
+
   <BR>
   <BR>
   
@@ -204,7 +206,8 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   <br>
 
   Gráfico-4, **"Densidade de Fluxo_de_ar"**
-  ![alt text](Grafico-4_densidade_airflow.png)
+  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/8e1f1da2-5c03-43f3-9000-404fbae23fa9)
+
 
   No gráfico-4, a densidade do gráfico tem uma inclinação para a direita, com uma cauda mais longa estendendo-se para valores maiores. O Primeiro Quartil (1st Qu.) de **3.200** indica que **25%** dos valores estão abaixo desse ponto, e a densidade começa a aumentar a partir daqui. A Mediana (Median) de **5.800** marca um ponto significativo no gráfico, representando o valor central da distribuição dos dados. Já no Terceiro Quartil (3rd Qu.) de **11.200**, a densidade começa a se achatar, mostrando que **75%** dos valores estão abaixo desse nível e que há uma diminuição na frequência de valores mais altos.
 <br>
@@ -216,7 +219,8 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   <BR>
 
   Gráfico-5, **"Histograma de Frequencia "** e  **"Boxplot de Frequencia"**
-  ![alt text](Grafico-5_duo_frequency.png)
+  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/87bfb455-03d2-4ccb-b535-a30cd4c07288)
+
   <br>
   <br>
 
@@ -228,7 +232,8 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   <br>
 
   Gráfico-6, **"Densidade de Frequencia"**
-  ![alt text](Grafico-6_densidade_frequency.png)
+  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/bb306e6d-2645-4f1d-ae50-081262065bfb)
+
 
   Visualmente, o gráfico-6 de densidade mostra uma elevação progressiva do valor mínimo até alcançar um pico antes da mediana **(27.50)**. A média **(31.61)**, sendo maior que a mediana, sugere uma distribuição com uma extensão maior para os valores mais elevados de frequência, caracterizando uma cauda à direita. Esse aumento é seguido por um declínio que se acentua após o terceiro quartil **(47.00)**, concluindo em **75.00.**
   <br>
@@ -240,7 +245,8 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   <BR>
 
   Gráfico-7, **"Densidade, Histograma e Boxplot de Distancia"**
-  ![alt text](Grafico-7_mult_distance.png)
+  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/970ab56f-554c-48fd-834f-b9db406c0432)
+
 
                 Valor    | Frequência | Proporção
                 ---------|------------|----------
@@ -267,7 +273,8 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
  <br>
 
   Gráfico-8, **"Matriz de Correlação"**
-  ![alt text](Grafico-8_matriz_correlação.png)
+  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/b7c17e80-4a51-4c15-8ae3-f505f79a9eba)
+
 
   <br>
   
@@ -277,7 +284,8 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   <br>
 
   Gráfico-9, **"Fluxo_de_ar_x_Status"**
-  ![alt text](Grafico-9_Airflow_x_Status.png)
+  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/399964e2-178e-4609-b95c-7fe5fbceec44)
+
 
   No gráfico-9,  ao analisarmos, notamos que há valores extremos (zeros). Seguindo a análise, percebemos um aumento no fluxo de ar que está associado à extinção da chama. Contudo, é preciso ter cautela ao considerar essa associação como absoluta, uma vez que o mesmo pico na frequência ‘3 e 5’ é observado em ambas as modalidades, tanto na chama (não extinta = 0) quanto na chama (extinta = 1).
   <BR>
@@ -285,7 +293,8 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   <BR>
 
   Gráfico-10, **"Frequência de fluxo de ar_x_Status"**
-  ![alt text](Grafico-10_Frequencia_fluxo_ar_x_Status.png)
+  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/ebb73dcb-9a68-44cb-a414-2137aafbc585)
+
 
 
   Os gráficos 9 e 10, apresentam a mesma informação, mas sob diferentes perspectivas angulares. A presença do pico "3 e 5" em ambos sugere que outros fatores podem estar influenciando o resultado.
@@ -295,7 +304,8 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
 
 
   Gráfico-11, **"Frequência de Desibel_x_Status"**
-  ![alt text](Grafico-11_freq_x_desibel_x_status.png)
+  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/999646e1-c070-4877-974b-bfa11abe1eb2)
+
   <br>
   <br>
   <br>
@@ -303,7 +313,8 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
 
 
   Gráfico-12, **"Correlação entre Desibel_x_Airflow_x_Status"**
-  ![alt text](Grafico-12_Desibel_x_Airflow_x_Status.png)
+  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/6c95807b-b306-441c-94b0-853a4f87d944)
+
 
   <br>
   No gráfico 11 e 12, vemos que a chama se apaga quando o nível de decibéis fica entre 86 e 113 e o fluxo de ar varia entre 3 e 17, com uma frequência entre 10 e 45. Porém, essa relação não é suficiente para explicar o fenômeno, pois também há um pico para as duas situações da chama: acesa (0) ou apagada (1).
@@ -317,7 +328,8 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   <BR>
 
   Gráfico-13, **"Distribuição de Tamanho e Combustivel"**
-  ![alt text](Grafico-13_barras_size_x_fuel_1.png)
+  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/e18b1b5e-c650-4a10-9c17-25c1bd94d4b1)
+
   <br>
   <br>
 
@@ -330,7 +342,8 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   <br>
 
   Gráfico-14, **"Distribuição de Status"**
-  ![alt text](Grafico-14_barras_status_1.png)
+  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/075dda1e-efc8-481c-9795-db8eb57c5b0a)
+
   <br>
   <br>
 
@@ -345,7 +358,8 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   <br>
 
   Gráfico-15, **"Balanceamento de Tamanho e Combustivel"**
-  ![alt text](Grafico-15_duo_balance.png)
+  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/abba04a3-7905-4196-832b-8e0d5f32e419)
+
   <br>
   <br>
 
@@ -413,7 +427,8 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   <BR>
 
   Gráfico-16, **"Multi-Gráficos Normal QQ-Plot"**
- ![alt text](Grafico-16_multi_qq_plot.png)
+ ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/c56e2833-fc17-44b3-95e1-a46f15d4cadb)
+
 
     
 
@@ -439,7 +454,8 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   <br>
 
   Gráfico-17, **"Importância das Variáveis"**
-  ![alt text](Grafico-17_varImp_plot.png)
+  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/40087b6c-72a2-43fa-8fe0-e5541b4b69e0)
+
 
   <br>
 
@@ -523,7 +539,8 @@ Ou seja, iremos construir o modelo base preditivo com todas as variáveis e, ap�
   <br>
 
   Gráfico-18, **"Relação entre Custo e Acurácia - SVM "**
-  ![alt text](Grafico-18_acuracia_fit1.png)
+  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/034ba5e0-05c8-41a8-ac0e-32b1b26264f3)
+
 
   <br>
   O modelo SVM obteve uma excelente performance com uma acurácia de 0.93. Isso significa que ele acertou 93% das previsões. A matriz de confusão revela que:
@@ -585,7 +602,8 @@ Ou seja, iremos construir o modelo base preditivo com todas as variáveis e, ap�
   <br>
 
   Gráfico-19, **"Relação da Acurácia - Random Forest "**
-  ![alt text](Grafico-19_acuracia_fit2.png)
+  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/fd55773c-ecbe-4edd-b0d2-68aa4f1fb66c)
+
 
   <br>
   O modelo RF obteve uma excelente performance com uma acurácia de 0.97. Isso significa que ele acertou 97% das previsões. A matriz de confusão revela que:
