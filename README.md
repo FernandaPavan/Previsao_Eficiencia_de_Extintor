@@ -65,7 +65,7 @@ A importância desse modelo reside na possibilidade de aumentar a segurança das
  ### **4. Descrição de Dados**
 
 ### ```4.1 Conjunto de Dados ``` 
-O conjunto de dados **Acoustic Extinguisher Fire** foi obtido por meio de testes de extinção de chamas usando um sistema de extinção baseado em ondas sonoras. Esse sistema inclui 4 subwoofers com uma potência total de 4.000 Watts. Durante os experimentos, foram utilizados diferentes tipos de combustíveis e variações no tamanho da chama. Além disso, o sistema envolveu medições de intensidade do som, fluxo de ar e temperatura da chama.
+O conjunto de dados [Acoustic Extinguisher Fire](https://ieee-dataport.org/documents/acoustic-extinguisher-fire-dataset) foi obtido por meio de testes de extinção de chamas usando um sistema de extinção baseado em ondas sonoras. Esse sistema inclui 4 subwoofers com uma potência total de 4.000 Watts. Durante os experimentos, foram utilizados diferentes tipos de combustíveis e variações no tamanho da chama. Além disso, o sistema envolveu medições de intensidade do som, fluxo de ar e temperatura da chama.
 <br>
 
 A fonte de alimentação que alimenta o sistema e o circuito do filtro garantindo que 
@@ -631,8 +631,7 @@ Ou seja, iremos construir o modelo base preditivo com todas as variáveis e, ap�
  
  Pavan, Fernanda. (2024). **Previsão de Eficiência de Extintor de Incêndio.** Conclusão Acadêmica da Formação de Cientista de Dados. Data Science Academy, São Paulo, Brasil. Desenvolvido sob Mentoria dos Profissionais da Instituição. 
 
- Clique aqui para visitar a **Data Science Academy**:<br>
- (https://www.datascienceacademy.com.br/)
+ Clique aqui para visitar a [Data Science Academy:](https://www.datascienceacademy.com.br/)
 
  <br>
  <br>
@@ -642,6 +641,5 @@ Ou seja, iremos construir o modelo base preditivo com todas as variáveis e, ap�
   
   KOKLU M., TASPINAR YS, (2021). Determinando o status de extinção de chamas de combustível com ondas sonoras por métodos de aprendizado de máquina. Acesso IEEE, 9, pp.86207-86216, Doi: 10.1109/ACCESS.2021.3088612
 
-  Clique aqui para baixar o conjunto de dados **Acoustic Extinguisher Fire Dataset:** <br>
-  (https://ieee-dataport.org/documents/acoustic-extinguisher-fire-dataset)
+  Clique aqui para baixar o conjunto de dados [Acoustic Extinguisher Fire Dataset:](https://ieee-dataport.org/documents/acoustic-extinguisher-fire-dataset)
 
