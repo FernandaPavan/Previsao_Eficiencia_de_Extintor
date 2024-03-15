@@ -631,7 +631,7 @@ Ou seja, iremos construir o modelo base preditivo com todas as variáveis e, ap�
  
  Pavan, Fernanda. (2024). **Previsão de Eficiência de Extintor de Incêndio.** Conclusão Acadêmica da Formação de Cientista de Dados. Data Science Academy, São Paulo, Brasil. Desenvolvido sob Mentoria dos Profissionais da Instituição. 
 
- Clique aqui para visitar a [Data Science Academy:](https://www.datascienceacademy.com.br/)
+ Clique aqui para visitar a [Data Science Academy:](https://www.datascienceacademy.com.br)
 
  <br>
  <br>
