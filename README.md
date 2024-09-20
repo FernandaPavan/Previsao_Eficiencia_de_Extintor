@@ -418,7 +418,7 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
 
   <BR>
 
-  Gráfico-16, **"Multi-Gráficos Normal QQ-Plot"**
+  Gráfico-15, **"Multi-Gráficos Normal QQ-Plot"**
  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/c56e2833-fc17-44b3-95e1-a46f15d4cadb)
 
 
@@ -445,8 +445,8 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   <br>
   <br>
 
-  Gráfico-17, **"Importância das Variáveis"**
-  ![alt text](https://github.com/FernandaPavan/Prevendo_Eficiencia_de_Extintores/blob/main/Plots/Grafico-17_varImp_plot.png)
+  Gráfico-16, **"Importância das Variáveis"**
+  ![alt text](https://github.com/FernandaPavan/Prevendo_Eficiencia_de_Extintores/blob/main/Plots/Grafico-16_varImp_plot.png)
 
 
   <br>
@@ -530,8 +530,8 @@ Prediction    0    1
   <br>
   <br>
 
-  Gráfico-18, **"Relação entre Custo e Acurácia - SVM "**
-  ![alt text](https://github.com/FernandaPavan/Prevendo_Eficiencia_de_Extintores/blob/main/Plots/Grafico-18_acuracia_fit1.png)
+  Gráfico-17, **"Relação entre Custo e Acurácia - SVM "**
+  ![alt text](https://github.com/FernandaPavan/Prevendo_Eficiencia_de_Extintores/blob/main/Plots/Grafico-17_acuracia_fit1.png)
 
 
   <br>
@@ -593,8 +593,8 @@ Prediction    0    1
   <br>
   <br>
 
-  Gráfico-19, **"Relação da Acurácia - Random Forest "**
-  ![alt text](https://github.com/FernandaPavan/Prevendo_Eficiencia_de_Extintores/blob/main/Plots/Grafico-19_acuracia_fit2.png)
+  Gráfico-18, **"Relação da Acurácia - Random Forest "**
+  ![alt text](https://github.com/FernandaPavan/Prevendo_Eficiencia_de_Extintores/blob/main/Plots/Grafico-18_acuracia_fit2.png)
 
   <br>
   O modelo RF obteve uma excelente performance com uma acurácia de 0.97. Isso significa que ele acertou 97% das previsões. A matriz de confusão revela que:
@@ -655,8 +655,8 @@ Prediction    0    1
   <br>
   <br>
 
-  Gráfico-20, **"Relação da Acurácia - KNN "**
-  ![alt text](https://github.com/FernandaPavan/Prevendo_Eficiencia_de_Extintores/blob/main/Plots/Grafico-20_acuracia_fit3.png)
+  Gráfico-19, **"Relação da Acurácia - KNN "**
+  ![alt text](https://github.com/FernandaPavan/Prevendo_Eficiencia_de_Extintores/blob/main/Plots/Grafico-19_acuracia_fit3.png)
 
   <br>
   O modelo KNN obteve uma excelente performance com uma acurácia de 0.96. Isso significa que ele acertou 96% das previsões. A matriz de confusão revela que:
