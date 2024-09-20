@@ -336,34 +336,25 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   No gráfico-13, a variável **Tamanho** apresenta uma distribuição de frequência desigual, onde os **valores de 1 a 5 ocorrem 3078** vezes cada, indicando uma maior frequência em comparação com os **valores 6 e 7**, que aparecem **1026** cada.
   Na distribuição da variável **Combustivel**, observa-se também uma frequência desigual, indicando que gasolina, querosene e thinner têm a mesma alta frequência de ocorrências, cada um aparecendo **5130** vezes. Em contraste, o lpg é menos frequente, com **2052 ocorrências**. 
   
-  Essa diferença na frequência dos valores pode requerer atenção especial durante a análise de dados para assegurar que as conclusões e modelos estatísticos sejam válidos e não estejam tendenciosos devido ao desequilíbrio observado.
+
   <br>
   <br>
   <br>
 
   Gráfico-14, **"Distribuição de Status"**
+  
   ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/075dda1e-efc8-481c-9795-db8eb57c5b0a)
 
   <br>
   <br>
 
-  No gráfico-14, a variável **Status** mostra uma distribuição quase equilibrada, com **8759** ocorrências do **valor 0** e **8683** ocorrências do **valor 1**, indicando uma proporção balanceada entre as duas categorias.
+  No gráfico-14, a variável **Status** mostra uma distribuição quase equilibrada, com **8759** ocorrências do **valor 0** e **8683** ocorrências do **valor 1**, indicando uma proporção quase balanceada entre as duas categorias.
   <br>
   <br>
   <br>
 
-* **Balanceamento de Classes:** Nesta etapa, vamos utilizar a técnica de ```Oversampling```, que consiste em aumentar a quantidade de registros da classe minoritária. Isso será feito através da geração de novos dados sintéticos, até que a base de dados apresente uma distribuição mais equilibrada entre as classes das variáveis. 
+* **Balanceamento de Classes:** Embora o desbalanceamento entre as classes "Status" seja leve, optamos por não aplicar técnicas de balanceamento neste momento. No entanto, o balanceamento será reavaliado em etapas posteriores, caso o desnível entre as classes se torne mais acentuado.
   <br>
-  <br>
-  <br>
-
-  Gráfico-15, **"Balanceamento de Tamanho e Combustivel"**
-  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/abba04a3-7905-4196-832b-8e0d5f32e419)
-
-  <br>
-  <br>
-
-  No gráfico-15, nota-se que a distribuição das variáveis encontra-se agora balanceada através da técnica de oversampling. O objetivo é melhorar o desempenho do modelo de machine learning.
   <br>
   <br>
  
@@ -454,7 +445,7 @@ dados <- read_excel("Acoustic_Extinguisher_Fire_Dataset.xlsx")
   <br>
 
   Gráfico-17, **"Importância das Variáveis"**
-  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/40087b6c-72a2-43fa-8fe0-e5541b4b69e0)
+  ![alt text](https://github.com/FernandaPavan/Prevendo_Eficiencia_de_Extintores/blob/main/Plots/Grafico-17_varImp_plot.png)
 
 
   <br>
@@ -510,45 +501,45 @@ Ou seja, iremos construir o modelo base preditivo com todas as variáveis e, ap�
   ```
   Confusion Matrix and Statistics
 
-           Reference
-  Prediction    0    1
-           0 2970  192
-           1  205 3096
-                                          
-               Accuracy : 0.9386          
-                 95% CI : (0.9324, 0.9443)
-    No Information Rate : 0.5087          
-    P-Value [Acc > NIR] : <2e-16          
-                                          
-                  Kappa : 0.8771          
-                                          
-  Mcnemar's Test P-Value : 0.547           
-                                          
-            Sensitivity : 0.9354          
-            Specificity : 0.9416          
-         Pos Pred Value : 0.9393          
-         Neg Pred Value : 0.9379          
-             Prevalence : 0.4913          
-         Detection Rate : 0.4595          
-   Detection Prevalence : 0.4892          
-      Balanced Accuracy : 0.9385          
-                                  
-       'Positive' Class : 0
+          Reference
+Prediction    0    1
+         0 2489  172
+         1  138 2432
+                                        
+               Accuracy : 0.9407        
+                 95% CI : (0.934, 0.947)
+    No Information Rate : 0.5022        
+    P-Value [Acc > NIR] : < 2e-16       
+                                        
+                  Kappa : 0.8815        
+                                        
+ Mcnemar's Test P-Value : 0.06089       
+                                        
+            Sensitivity : 0.9475        
+            Specificity : 0.9339        
+         Pos Pred Value : 0.9354        
+         Neg Pred Value : 0.9463        
+             Prevalence : 0.5022        
+         Detection Rate : 0.4758        
+   Detection Prevalence : 0.5087        
+      Balanced Accuracy : 0.9407        
+                                        
+       'Positive' Class : 0 
   ```
   <br>
   <br>
 
   Gráfico-18, **"Relação entre Custo e Acurácia - SVM "**
-  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/034ba5e0-05c8-41a8-ac0e-32b1b26264f3)
+  ![alt text](https://github.com/FernandaPavan/Prevendo_Eficiencia_de_Extintores/blob/main/Plots/Grafico-18_acuracia_fit1.png)
 
 
   <br>
-  O modelo SVM obteve uma excelente performance com uma acurácia de 0.93. Isso significa que ele acertou 93% das previsões. A matriz de confusão revela que:
+  O modelo SVM obteve uma excelente performance com uma acurácia de 0.94. Isso significa que ele acertou 93% das previsões. A matriz de confusão revela que:
 
   <br>
 
-  **Classe Não Extinta (0):** Foi prevista 2970 vezes e o modelo errou 192 vezes.<br>
-  **Classe Extinta (1):** O modelo errou 205 vezes, e acertou 3096 vezes.<br>
+  **Classe Não Extinta (0):** Foi prevista 2489 vezes e o modelo errou 172 vezes.<br>
+  **Classe Extinta (1):** O modelo errou 138 vezes, e acertou 2432 vezes.<br>
   
 
   <br>
@@ -574,44 +565,43 @@ Ou seja, iremos construir o modelo base preditivo com todas as variáveis e, ap�
   Confusion Matrix and Statistics
 
           Reference
-  Prediction    0    1
-          0  3102   72
-          1    73 3216
-                                         
-               Accuracy : 0.9776         
-                 95% CI : (0.9737, 0.981)
-    No Information Rate : 0.5087         
-    P-Value [Acc > NIR] : <2e-16         
-                                         
-                  Kappa : 0.9551         
-                                         
-  Mcnemar's Test P-Value : 1              
-                                         
-            Sensitivity : 0.9770         
-            Specificity : 0.9781         
-         Pos Pred Value : 0.9773         
-         Neg Pred Value : 0.9778         
-             Prevalence : 0.4913         
-         Detection Rate : 0.4800         
-   Detection Prevalence : 0.4911         
-      Balanced Accuracy : 0.9776         
-                                         
+Prediction    0    1
+         0 2553   76
+         1   74 2528
+                                          
+               Accuracy : 0.9713          
+                 95% CI : (0.9664, 0.9757)
+    No Information Rate : 0.5022          
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.9426          
+                                          
+ Mcnemar's Test P-Value : 0.9349          
+                                          
+            Sensitivity : 0.9718          
+            Specificity : 0.9708          
+         Pos Pred Value : 0.9711          
+         Neg Pred Value : 0.9716          
+             Prevalence : 0.5022          
+         Detection Rate : 0.4881          
+   Detection Prevalence : 0.5026          
+      Balanced Accuracy : 0.9713          
+                                          
        'Positive' Class : 0 
   ```
   <br>
   <br>
 
   Gráfico-19, **"Relação da Acurácia - Random Forest "**
-  ![alt text](https://github.com/FernandaPavan/Previsao_Eficiencia_de_Extintor/assets/110939025/fd55773c-ecbe-4edd-b0d2-68aa4f1fb66c)
-
+  ![alt text](https://github.com/FernandaPavan/Prevendo_Eficiencia_de_Extintores/blob/main/Plots/Grafico-19_acuracia_fit2.png)
 
   <br>
   O modelo RF obteve uma excelente performance com uma acurácia de 0.97. Isso significa que ele acertou 97% das previsões. A matriz de confusão revela que:
 
   <br>
 
-  **Classe Não Extinta (0):** Foi prevista 3102 vezes e o modelo errou 72 vezes.<br>
-  **Classe Extinta (1):** O modelo errou 73 vezes, e acertou 3216 vezes.<br>
+  **Classe Não Extinta (0):** Foi prevista 2553 vezes e o modelo errou 76 vezes.<br>
+  **Classe Extinta (1):** O modelo errou 74 vezes, e acertou 2528 vezes.<br>
 
 
   <br>
