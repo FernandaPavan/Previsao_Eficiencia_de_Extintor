@@ -534,7 +534,7 @@ Prediction    0    1
 
 
   <br>
-  O modelo SVM obteve uma excelente performance com uma acurácia de 0.94. Isso significa que ele acertou 93% das previsões. A matriz de confusão revela que:
+  O modelo SVM obteve uma excelente performance com uma acurácia de 0.94. Isso significa que ele acertou 94% das previsões. A matriz de confusão revela que:
 
   <br>
 
