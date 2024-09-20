@@ -55,6 +55,7 @@ A importância desse modelo reside na possibilidade de aumentar a segurança das
         - Treinamento e Teste de Modelos:
         - modelo_1
         - modelo_2
+        - modelo_3
 6. Conclusão do Projeto
 7. Referências Bibliográficas 
 ```
