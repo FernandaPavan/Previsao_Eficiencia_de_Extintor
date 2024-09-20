@@ -480,7 +480,7 @@ Ou seja, iremos construir o modelo base preditivo com todas as variáveis e, ap�
 
   <br>
 
-  #### **TREINAMENTO E TESTE DE MODELOS: SVM E RANDOM FOREST.**
+  #### **TREINAMENTO E TESTE DE MODELOS: SVM | RANDOM FOREST | KNN.**
   ---
   <br>
 
@@ -499,7 +499,7 @@ Ou seja, iremos construir o modelo base preditivo com todas as variáveis e, ap�
   ---
 
   ```
-  Confusion Matrix and Statistics
+ Confusion Matrix and Statistics
 
           Reference
 Prediction    0    1
@@ -566,28 +566,28 @@ Prediction    0    1
 
           Reference
 Prediction    0    1
-         0 2553   76
-         1   74 2528
+         0 2551   85
+         1   76 2519
                                           
-               Accuracy : 0.9713          
-                 95% CI : (0.9664, 0.9757)
+               Accuracy : 0.9692          
+                 95% CI : (0.9642, 0.9737)
     No Information Rate : 0.5022          
     P-Value [Acc > NIR] : <2e-16          
                                           
-                  Kappa : 0.9426          
+                  Kappa : 0.9384          
                                           
- Mcnemar's Test P-Value : 0.9349          
+ Mcnemar's Test P-Value : 0.5284          
                                           
-            Sensitivity : 0.9718          
-            Specificity : 0.9708          
-         Pos Pred Value : 0.9711          
-         Neg Pred Value : 0.9716          
+            Sensitivity : 0.9711          
+            Specificity : 0.9674          
+         Pos Pred Value : 0.9678          
+         Neg Pred Value : 0.9707          
              Prevalence : 0.5022          
-         Detection Rate : 0.4881          
-   Detection Prevalence : 0.5026          
-      Balanced Accuracy : 0.9713          
+         Detection Rate : 0.4877          
+   Detection Prevalence : 0.5039          
+      Balanced Accuracy : 0.9692          
                                           
-       'Positive' Class : 0 
+       'Positive' Class : 0
   ```
   <br>
   <br>
@@ -600,12 +600,75 @@ Prediction    0    1
 
   <br>
 
-  **Classe Não Extinta (0):** Foi prevista 2553 vezes e o modelo errou 76 vezes.<br>
-  **Classe Extinta (1):** O modelo errou 74 vezes, e acertou 2528 vezes.<br>
+  **Classe Não Extinta (0):** Foi prevista 2551 vezes e o modelo errou 85 vezes.<br>
+  **Classe Extinta (1):** O modelo errou 76 vezes, e acertou 2519 vezes.<br>
 
 
   <br>
   <br>
+
+    ---
+  <br>
+
+  **Classificação com KNN:** ou K-vizinhos mais próximos, é um algoritmo de aprendizado de máquina supervisionado utilizado para classificação e regressão. A classe do ponto de dados de teste é determinada pela classe mais frequente entre seus K vizinhos mais próximos.
+  <br>
+
+  Modelo 3: Treino | Teste | Matriz de Confusão.
+
+  ```fit3 <- train(Status ~., data = dados_treino, method = "knn")```
+
+  ```predicoes.knn <- predict(fit3,dados_teste)```
+
+  ```confusionMatrix(predicoes.knn, dados_teste$Status)```
+
+  ---
+
+  ```
+  CConfusion Matrix and Statistics
+
+          Reference
+Prediction    0    1
+         0 2533   83
+         1   94 2521
+                                          
+               Accuracy : 0.9662          
+                 95% CI : (0.9609, 0.9709)
+    No Information Rate : 0.5022          
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.9323          
+                                          
+ Mcnemar's Test P-Value : 0.4523          
+                                          
+            Sensitivity : 0.9642          
+            Specificity : 0.9681          
+         Pos Pred Value : 0.9683          
+         Neg Pred Value : 0.9641          
+             Prevalence : 0.5022          
+         Detection Rate : 0.4842          
+   Detection Prevalence : 0.5001          
+      Balanced Accuracy : 0.9662          
+                                          
+       'Positive' Class : 0 
+  ```
+  <br>
+  <br>
+
+  Gráfico-20, **"Relação da Acurácia - KNN "**
+  ![alt text](https://github.com/FernandaPavan/Prevendo_Eficiencia_de_Extintores/blob/main/Plots/Grafico-20_acuracia_fit3.png)
+
+  <br>
+  O modelo KNN obteve uma excelente performance com uma acurácia de 0.96. Isso significa que ele acertou 96% das previsões. A matriz de confusão revela que:
+
+  <br>
+
+  **Classe Não Extinta (0):** Foi prevista 2533 vezes e o modelo errou 83 vezes.<br>
+  **Classe Extinta (1):** O modelo errou 94 vezes, e acertou 2521 vezes.<br>
+
+
+  <br>
+  <br>
+  
 
    ### **6. Conclusão do Projeto**
 
