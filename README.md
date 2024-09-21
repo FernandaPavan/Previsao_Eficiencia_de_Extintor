@@ -485,7 +485,7 @@ Ou seja, iremos construir o modelo base preditivo com todas as variáveis e, ap�
   ---
   <br>
 
-  **Classificação com Support Vector Machines (SVM):**  é um conjunto de métodos de aprendizado supervisionado que será utilizado para classificação. O SVM encontra uma linha de separação (ou hiperplano) entre dados pertencentes a duas classes diferentes, mesmo quando os dados não têm uma separação linear clara. 
+  **Modelo com Support Vector Machines (SVM):**  é um conjunto de métodos de aprendizado supervisionado que será utilizado para classificação. O SVM encontra uma linha de separação (ou hiperplano) entre dados pertencentes a duas classes diferentes, mesmo quando os dados não têm uma separação linear clara. 
   <br>
 
   Modelo 1: Treino | Teste | Matriz de Confusão.
@@ -549,7 +549,7 @@ Prediction    0    1
   ---
   <br>
 
-  **Classificação com Random Forest:** é um algoritmo popular de aprendizado de máquina supervisionado que combina as saídas de vários modelos de árvores de decisão para chegar a um único resultado. Ele segue uma abordagem de conjunto (ensemble), o que significa que combina previsões de vários modelos menores, sendo cada um desses modelos menores uma árvore de decisão. O Random Forest contabiliza o número de previsões de cada classe (0 e 1) e escolhe a mais popular.
+  **Modelo com Random Forest:** é um algoritmo popular de aprendizado de máquina supervisionado que combina as saídas de vários modelos de árvores de decisão para chegar a um único resultado. Ele segue uma abordagem de conjunto (ensemble), o que significa que combina previsões de vários modelos menores, sendo cada um desses modelos menores uma árvore de decisão. O Random Forest contabiliza o número de previsões de cada classe (0 e 1) e escolhe a mais popular.
   <br>
 
   Modelo 2: Treino | Teste | Matriz de Confusão.
@@ -611,7 +611,7 @@ Prediction    0    1
     ---
   <br>
 
-  **Classificação com KNN:** ou K-vizinhos mais próximos, é um algoritmo de aprendizado de máquina supervisionado utilizado para classificação e regressão. A classe do ponto de dados de teste é determinada pela classe mais frequente entre seus K vizinhos mais próximos.
+  **Modelo com KNN:** ou K-vizinhos mais próximos, é um algoritmo de aprendizado de máquina supervisionado utilizado para classificação e regressão. A classe do ponto de dados de teste é determinada pela classe mais frequente entre seus K vizinhos mais próximos.
   <br>
 
   Modelo 3: Treino | Teste | Matriz de Confusão.
